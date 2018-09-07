@@ -1,0 +1,10 @@
+<h2>Memes de programación</h2>
+<div class="container">
+    <div class="row">
+        <app-meme class="col-4" *ngFor="let meme of memes" [title]='meme.title' [image]='meme.image' [description]='meme.description'>
+        </app-meme>
+    </div>
+</div>
+
+<app-meme-form (onMeme)='onNewMeme($event)'>
+</app-meme-form>
