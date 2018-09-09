@@ -1,3 +1,20 @@
-<p>
-  login works!
-</p>
+<form class="login-form">
+  <div class="login-form-body">
+    <div class="login-form-content-control">
+      <mat-form-field class="login-form-control">
+        <mat-icon matPrefix class="login-prefix-icon">account_circle</mat-icon>
+        <input matInput placeholder="Correo Electrónico" formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field class="login-form-control">
+        <mat-icon matPrefix class="login-prefix-icon">lock</mat-icon>
+        <input matInput="password" type="password" placeholder="Contraseña" formControlName="password">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="login-form-footer">
+    <button mat-button>Log In</button>
+    <button mat-button>Resgistrarse</button>
+
+  </div>
+</form>
