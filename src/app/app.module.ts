@@ -6,6 +6,14 @@ import { routes } from './app-routing.module'
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { PostContainerComponent } from './post-container/post-container.component';
+import { PostComponent } from './post/post.component';
+import { InputPostComponent } from './input-post/input-post.component';
+
+//Nuestros components
+import { LoginComponent } from './component/login/login.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { StarUpPage } from './pages/star-up/star-up.pages';
 
 //Material componentes necesarios
 import {CdkTableModule} from '@angular/cdk/table';
@@ -21,15 +29,7 @@ import {
   MatSortModule, MatStepperModule, MatTableModule, MatTooltipModule, MatMenuTrigger,
   MatPaginatorIntl, MatBadgeModule, MatBottomSheetModule, MatTreeModule, ErrorStateMatcher, ShowOnDirtyErrorStateMatcher,
 } from '@angular/material';
-
-//our components
-import { LoginComponent } from './component/login/login.component';
-import { SidebarComponent } from './pages/principal/sidebar/sidebar.component';
-import { PostsComponent } from './posts/posts.component';
-import { StarUpPage } from './pages/star-up/star-up.pages';
-import { SignupComponent } from './component/signup/signup.component';
-import { PrincipalComponent } from './pages/principal/principal.component';
-
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -37,10 +37,11 @@ import { PrincipalComponent } from './pages/principal/principal.component';
     AppComponent,
     LoginComponent,
     SidebarComponent,
-    PostsComponent,
     StarUpPage,
-    SignupComponent,
-    PrincipalComponent,
+    PostContainerComponent,
+    PostComponent,
+    InputPostComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

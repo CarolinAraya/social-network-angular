@@ -1,24 +1,22 @@
 import { Routes } from '@angular/router';
-import { StarUpPage } from './pages/star-up/star-up.pages';
 //import { PostsComponent } from 'src/app/posts/posts.component';
 import { LoginComponent } from 'src/app/component/login/login.component';
-import { SignupComponent } from './component/signup/signup.component';
-import { PrincipalComponent } from './pages/principal/principal.component';
+import { HomeComponent } from './home/home.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
   {
-    path: 'startup',
-    component: StarUpPage,
+    path: 'home',
+    component: HomeComponent,
     children: [
       { path: 'login', component: LoginComponent },
-      { path: 'signup', component: SignupComponent },
       { path: '', redirectTo: '/startup/login', pathMatch: 'prefix' },
       { path: '**', redirectTo: '/startup/login', pathMatch: 'prefix' },
     ]
   },
   {
-    path: 'principal',
-    component: PrincipalComponent,
+    path: 'post',
+    component: AppComponent,
 },
   { path: '', redirectTo: '/startup/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/startup/login', pathMatch: 'full' },

@@ -1,1 +1,33 @@
 <router-outlet></router-outlet>
+
+<div class="body">
+    <header>
+        <div class="container">
+            <div class="row" id="profile">
+                <div class="col-4 col-md-3 logo">
+                    <a href="#">
+                        <img src="../assets/img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col col-md-8">
+                    <a href="profile.html">
+                        <span class="displayName">Estephany</span>
+                    </a>
+                    <a href="profile.html" class="imagen"><img src="../assets//img//user-default.png" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <app-sidebar></app-sidebar>
+            </div>
+            <div class="col col-md-6 mx-auto mt-4">
+                <app-post-container></app-post-container>
+                <!-- <router-outlet></router-outlet> -->
+            </div>
+        </div>
+    </main>
+</div>
